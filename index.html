@@ -1,28 +1,75 @@
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
+|<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Hello World !</h1>
+    <title>Klyve</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/3d98670a4b.js" crossorigin="anonymous"></script>
+  </head>
+
+  <header>
+    <a href="#home">
+      <img src="images/Logo.png" alt="rainydays-logo" id="logo">
+    </a>
+    <!-- Note: Uses Font Awesome 5 for hamburger icon -->
+    <label for="hamburger-menu">
+        <i class="fas fa-bars"></i>
+    </label>
+    <input type="checkbox" id="hamburger-menu">
+    <nav>
+        <ul>
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a class="inactive" href="#about">Jackets</a></li>
+        </ul>
+    </nav>
+  </header>
+  
+  <section id="hero">
+    <picture>
+      <source srcset="images/hero_mobile.svg" media="(max-width: 640px)">
+      <img src="images/Hero.png" alt="JAckets Suited for bergen">
+    </picture> 
+  </section>
+  
+  <section id="products">
+    <div>Product-box a</div>
+    <div>Product-box b</div>
+    <div>Product-box c</div>
+  </section>
+  
+  <section id="info">
+    <h2>Subheader</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, odit officiis hic non harum, iste quam iure tenetur temporibus enim aliquam, rem voluptate cupiditate eaque perspiciatis? Nam consectetur molestiae voluptatibus?</p>
+  </section>
+  
+  <footer>
+    <div>Box e - stuff about address</div>
+    <div>Box f - other interesting stuff</div>
+  </footer>
+
+  <!--<body>
+   <div class="container">  
+       <div class="navbar">
+          <nav class="topnav">
+            <ul>
+            <li><a class="active" href="index.html">HOME</a></li>
+            <li><a href="products.html">JACKETS</a></li>
+            </ul>
+            </nav>   
+       </div>
+       <div class="logo">
+        <img class="logonav" src="images/Logo.png" width="20%">
+        <img class="cart" src="images/cart.png" width="5%">
+       </div>
+       
+        
+       </div>
+   </div>
+-->
+
+
 </body>
 </html>
-
-
-
-<style>
-
-h1 {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: white;
-    text-align:center;
-    padding-top: 20%;
-}
-
-body {
-    background-color: #3F4142;
-}
-</style>
