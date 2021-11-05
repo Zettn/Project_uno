@@ -26,7 +26,7 @@ body {
 header { grid-area: top; background-color: rgb(255, 255, 255); }
 section#hero { grid-area: hero; background-color: rgb(255, 255, 255); }
 section#boxes { grid-area: boxes; background-color: rgb(255, 255, 255) }
-footer { grid-area: bottom;   background-color: rgb(255, 255, 255); }
+footer { grid-area: bottom;   background-color:#3f3f3f; }
 
 header {
   margin: 5px 0;
@@ -69,7 +69,7 @@ header nav ul li a {
     text-decoration: none; 
     color: white; 
     background: #D9D9D9;
-    padding: 10px 10px;
+    padding: 15px 15px;
     display: block; 
     text-align: center;
     font-family:"gilroy"; 
@@ -88,7 +88,8 @@ header nav ul li:last-child {
 }
 
 section#hero {
-  position: relative; 
+  position: relative;
+  margin-top:30px;
 }
 
 section#hero img {
@@ -103,6 +104,7 @@ section#hero > div.center {
   padding: 20px;
   bottom: 48px;
   left: 20px;
+  
 }
 
 section#boxes { 
@@ -152,8 +154,7 @@ button {
 }
 
 .card button:hover {
-  background-color: #082a30;
-  color:black;
+  background-color: #0A3641;
 }
 
 
@@ -162,24 +163,33 @@ footer {
   padding: 10px 0; 
   display: flex;
   flex-wrap: wrap;
+  color:white;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 footer > * {
   flex: 100%;
   height: 50px; 
-  background-color: lightgray;
+  background-color: #3f3f3f;
   padding: 10px 0;
 }
+footer p {
+  margin-left:20px;
+}
 
-footer > :last-child {
-  background-color: white;
+footer a {
+  color:white;
+  text-decoration: none;
+  margin-left: 30px;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
 
 /* For mid sized screens */
 @media (min-width: 640px) {
-  body {
-      max-width: 900px; /* Demo-purposes only */
-  }
+
   header img#logo {
     height: 72px;
   }
@@ -213,15 +223,11 @@ footer > :last-child {
   header nav li:last-child {
       margin-right: 0; /**/
   }
+  footer {
+    display:inline-flex;
+  }
 
 
-  footer > * {
-    flex: 50%;
-    padding: 10px 10px 10px 0;
-  }
-  footer > :last-child {
-    padding: 10px 0px 10px 10px;
-  }
   .card {
     display: inline-block;
     margin:10px;
